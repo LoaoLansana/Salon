@@ -1,0 +1,11 @@
+C:\Estudos\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.deps.json
+C:\Estudos\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.dll
+C:\Estudos\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.pdb
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.AssemblyInfoInputs.cache
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.AssemblyInfo.cs
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.csproj.CoreCompileInputs.cache
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.dll
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\refint\Salao.ServiceApplication.dll
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.pdb
+C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\ref\Salao.ServiceApplication.dll

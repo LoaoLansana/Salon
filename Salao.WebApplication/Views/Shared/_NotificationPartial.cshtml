@@ -1,0 +1,10 @@
+﻿@{
+    var notification = TempData["notification"] as string;
+}
+
+@if (!string.IsNullOrEmpty(notification))
+{
+    <script>
+        @Html.Raw(notification)
+    </script>
+}

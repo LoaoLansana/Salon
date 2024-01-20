@@ -1,0 +1,56 @@
+﻿@using Salao.Repository.Models.Usuario.Views;
+@model UsuarioViewModel
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row borderShadow">
+    <div class="col">
+        <div class="card bg-bluedark  h-100">
+            <div class="card-header" style="padding: 1.5rem;">
+                <h5 class="mb-0" style="font-size: 1rem;">Editar Usuário</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit" id="edit_form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="control-label">Usuário</label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label">Email</label>
+                            <input asp-for="Email" class="form-control" rows="2" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label">Nível</label>
+                            <select class="form-control" required="required" name="roleId">
+                                @foreach (var item in ViewBag.Roles)
+                                {
+                                    var selected = @item.Name == @Model.Roles.First();
+                                    <option value="@item.Id" selected="@selected">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" form="edit_form">Salvar</button>
+                    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

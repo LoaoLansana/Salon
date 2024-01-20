@@ -1,0 +1,54 @@
+﻿@model List<Salao.Repository.Models.Menu>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card xp-card-table borderShadow">
+    <div class="card-header xp-card-header">
+        <div class="xp-title">
+            <h5>Menus</h5>
+        </div>
+        <div class="xp-buttons">
+            <a asp-action="Create" class=" btn btn-primary">Cadastrar</a>
+        </div>
+    </div>
+    <div class="card-body xp-card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Icone</th>
+                    <th>Rota</th>
+                    <th>Menu Superior</th>
+                    <th>Criado</th>
+                    <th>Alterado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td><i class="@item.Icon"></i> - @item.Icon</td>
+                        <td>@item.Route</td>
+                        <td>@(item.ParentMenu != null ? item.ParentMenu.Name : "-")</td>
+                        <td>@item.CreatedAt</td>
+                        <td> @item.UpdatedAt</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="xp-edit" title="Editar"><i class="fas fa-pen-alt"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="xp-details" title="Detalhes"><i class="fas fa-list-alt"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="xp-delete" title="Excluir"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    
+</div>

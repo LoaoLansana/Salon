@@ -1,0 +1,39 @@
+﻿@using Salao.Repository.Models.Usuario.Views;
+@model UsuarioViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row borderShadow">
+    <div class="col">
+        <div class="card bg-bluedark  h-100">
+            <div class="card-header" style="padding: 1.5rem;">
+                <h5 class="mb-0" style="font-size: 1rem;">Detalhes do Usuário</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        Usuário
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.FullName)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Email
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="card-footer">
+                <div class="form-group">
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+                    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

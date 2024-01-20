@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Access Denied";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col">
+        <div class="card bg-bluedark  h-100">
+            <div class="card-header" style="padding: 1.5rem;">
+                <h5 class="mb-0" style="font-size: 1rem;">Você não tem permissão para acessar este recurso.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

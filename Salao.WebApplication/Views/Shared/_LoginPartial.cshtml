@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Salao.Repository.Models.Account;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <div style="float:right;">
+
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modalProfile">
+                    <a class="nav-link" title="Gerenciar" style="color: #9da9bb!important" href="@Url.Action("ChangePassword", "Account")">Olá @User.Identity?.Name!</a>
+                </button>
+            </div>
+        </li>
+        <li class="nav-item">
+            <form class="form-inline" asp-controller="Account" asp-action="Logout" style="color:#9da9bb!important" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="btn" style="color: #9da9bb!important;">
+                    <a class="nav-link" title="Logout" style="color: #9da9bb!important">Logout</a>
+                </button>
+            </form>
+        </li>
+    }
+</ul>
+

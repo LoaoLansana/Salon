@@ -1,0 +1,54 @@
+﻿@model List<Salao.Repository.Models.Account.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card xp-card-table">
+    <div class="card-header xp-card-header">
+        <div class="xp-title">
+            <h5>Accounts</h5>
+        </div>
+        <div class="xp-buttons">
+            <a asp-action="Register" class=" btn btn-primary">Adicionar nova conta</a>
+        </div>
+    </div>
+    <div class="card-body xp-card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Usuario</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>
+                            <div><span></span></div>
+                        </th>
+                        <td>
+                            <a asp-controller="Account" asp-action="Index" asp-route-rule_id="@item.Id"
+                           style="color: #9da9bb;">@item.UserName</a>
+                        </td>
+                        <td>@item.Email</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="xp-edit"><i class="fas fa-pen-alt"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="xp-details">
+                                <i class="fas fa-list-alt"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="xp-delete">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

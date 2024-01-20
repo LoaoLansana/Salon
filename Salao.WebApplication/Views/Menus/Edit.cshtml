@@ -1,0 +1,86 @@
+﻿@using Salao.Repository.Models.Menus.View;
+@model MenuViewModel
+
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-bluedark  h-100">
+            <div class="card-header" style="padding: 1.5rem;">
+                <h5 class="mb-0" style="font-size: 1rem;">Editar</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit" id="edit_form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="control-label">Nome</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label">Ícone</label>
+                            <input asp-for="Icon" class="form-control" />
+                            <span asp-validation-for="Icon" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="control-label">Rota</label>
+                            <input asp-for="Route" class="form-control" />
+                            <span asp-validation-for="Route" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3">
+                            <label asp-for="ParentMenuId" class="control-label"></label>
+                            <select asp-for="ParentMenuId" class="form-control">
+                                <option value="">Selecione</option>
+                                @foreach (var item in ViewBag.Menus)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="control-label">Perfis <i class="fa fa-info-circle" aria-hidden="true" title="Os perfis ao qual o item de menu pertencerá"></i></label>
+                        <div class="card-body xp-card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>Perfis</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in ViewBag.Roles)
+                                    {
+                                        var isChecked = Model.SelectedRoleIds.Contains(item.Id);
+                                        <tr>
+                                            <td style="width: 2%">
+                                                <input type="checkbox" name="chkRoles" value="@item.Id" @(isChecked ? "checked" : "")>
+                                            </td>
+                                            <td>@item.Name</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" form="edit_form">Salvar</button>
+                    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
