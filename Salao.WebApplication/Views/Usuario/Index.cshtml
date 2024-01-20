@@ -1,0 +1,63 @@
+﻿
+@using Salao.Repository.Models.Usuario.Views;
+@model List<UsuarioViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_NotificationPartial" />
+
+<div class="card xp-card-table borderShadow">
+    <div class="card-header xp-card-header">
+        <div class="xp-title">
+            <h5>Usuários</h5>
+        </div>
+        <div class="xp-buttons">
+            <a asp-action="Create" class=" btn btn-primary">Cadastrar</a>
+        </div>
+    </div>
+    <div class="card-body xp-card-body">
+        <table class="table" id="tbUsuarios" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th>Perfil</th>
+                    <th class="no-export">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a asp-controller="Usuario" asp-action="Details" asp-route-Id="@item.Id"
+                           asp-route-_status="New" style="color: #9da9bb;">@item.FullName</a>
+                        </td>
+                        <td>@item.Email</td>
+                        @if (item.Roles != null)
+                        {
+                            <td>
+                                @item.Roles.FirstOrDefault()
+                            </td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                        <td>
+                            <a title="Editar" asp-action="Edit" asp-route-id="@item.Id" class="xp-edit"><i class="fas fa-pen-alt"></i></a>
+                            <a title="Detalhes" asp-action="Details" asp-route-id="@item.Id" class="xp-details"><i class="fas fa-list-alt"></i></a>
+                            <a title="Excluir" asp-action="Delete" asp-route-id="@item.Id" class="xp-delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts{
+
+}

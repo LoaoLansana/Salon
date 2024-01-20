@@ -1,0 +1,12 @@
+C:\Estudos\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.deps.json
+C:\Estudos\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.dll
+C:\Estudos\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.pdb
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.csproj.AssemblyReference.cache
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.AssemblyInfoInputs.cache
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.AssemblyInfo.cs
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.csproj.CoreCompileInputs.cache
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.dll
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\refint\Salao.Repository.dll
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.pdb
+C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\ref\Salao.Repository.dll
