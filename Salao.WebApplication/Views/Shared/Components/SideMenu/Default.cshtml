@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Salao.Repository.Models.Menus.View.MenuRoleViewModel>
+
+<ul class="nav flex-column">
+    @foreach (var item in Model.Where(m => m.ParentMenuId == null))
+    {
+        <li class="nav-item @((Model.Any(m => m.ParentMenuId == item.Id)) ? "has-submenu" : "")">
+            <a class="nav-link active" aria-current="page" href="../@item.Route" title="@item.Name">
+                @if (Model.Any(m => m.ParentMenuId == item.Id))
+                {
+                    <span class="nav-item-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                }
+                <span class="nav-item-icon"><i class="@item.Icon"></i></span>
+                <span class="nav-item-text">@item.Name</span>
+            </a>
+            @if (Model.Any(m => m.ParentMenuId == item.Id))
+            {
+                <ul class="submenu nav flex-column">
+                    @foreach (var subMenu in Model.Where(m => m.ParentMenuId == item.Id))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../@subMenu.Route" title="@subMenu.Name">
+                                <span class="nav-item-icon"><i class="@subMenu.Icon"></i></span>
+                                <span class="nav-item-text">@subMenu.Name</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            }
+        </li>
+    }
+</ul>
+
+<!-- Adicione o CSS e o JavaScript para os submenus -->
+<style>
+    .nav-item-icon.submenu:before {
+        content: '\f107';
+        font-family: FontAwesome;
+        margin-right: 0.5rem;
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+    }
+
+    .nav-item-icon.submenu.rotate-up {
+        transform: rotate(-180deg);
+    }
+
+    .nav-item.has-submenu .submenu {
+        display: none;
+    }
+    /* Adiciona espaçamento entre o ícone de submenu e o texto */
+    .has-submenu .nav-item-icon.submenu {
+        margin-right: 0.5rem;
+    }
+
+    /* Adiciona espaçamento à esquerda para os submenus */
+    .submenu {
+        margin-left: 20px; /* Você pode ajustar o valor conforme necessário */
+    }
+</style>
+
