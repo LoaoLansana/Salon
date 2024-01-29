@@ -10,3 +10,16 @@ C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.dll
 C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\refint\Salao.Repository.dll
 C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.pdb
 C:\Estudos\Salao\Salao.Repository\obj\Debug\net7.0\ref\Salao.Repository.dll
+C:\Projeto\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.deps.json
+C:\Projeto\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.dll
+C:\Projeto\Salao\Salao.Repository\bin\Debug\net7.0\Salao.Repository.pdb
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.csproj.AssemblyReference.cache
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.AssemblyInfoInputs.cache
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.AssemblyInfo.cs
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.csproj.CoreCompileInputs.cache
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.sourcelink.json
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.dll
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\refint\Salao.Repository.dll
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\Salao.Repository.pdb
+C:\Projeto\Salao\Salao.Repository\obj\Debug\net7.0\ref\Salao.Repository.dll
