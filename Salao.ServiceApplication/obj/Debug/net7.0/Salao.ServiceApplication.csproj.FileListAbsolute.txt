@@ -9,3 +9,15 @@ C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplicat
 C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\refint\Salao.ServiceApplication.dll
 C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.pdb
 C:\Estudos\Salao\Salao.ServiceApplication\obj\Debug\net7.0\ref\Salao.ServiceApplication.dll
+C:\Projeto\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.deps.json
+C:\Projeto\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.dll
+C:\Projeto\Salao\Salao.ServiceApplication\bin\Debug\net7.0\Salao.ServiceApplication.pdb
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.AssemblyInfoInputs.cache
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.AssemblyInfo.cs
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.csproj.CoreCompileInputs.cache
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.sourcelink.json
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.dll
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\refint\Salao.ServiceApplication.dll
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\Salao.ServiceApplication.pdb
+C:\Projeto\Salao\Salao.ServiceApplication\obj\Debug\net7.0\ref\Salao.ServiceApplication.dll

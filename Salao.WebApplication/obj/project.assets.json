@@ -11481,19 +11481,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\j.lansana\\.nuget\\packages\\": {}
+    "C:\\Users\\gbarb\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\Salao\\Salao.WebApplication\\Salao.WebApplication.csproj",
+      "projectUniqueName": "C:\\Projeto\\Salao\\Salao.WebApplication\\Salao.WebApplication.csproj",
       "projectName": "Salao.WebApplication",
-      "projectPath": "C:\\Estudos\\Salao\\Salao.WebApplication\\Salao.WebApplication.csproj",
-      "packagesPath": "C:\\Users\\j.lansana\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\Salao\\Salao.WebApplication\\obj\\",
+      "projectPath": "C:\\Projeto\\Salao\\Salao.WebApplication\\Salao.WebApplication.csproj",
+      "packagesPath": "C:\\Users\\gbarb\\.nuget\\packages\\",
+      "outputPath": "C:\\Projeto\\Salao\\Salao.WebApplication\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\j.lansana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gbarb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11501,17 +11506,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Estudos\\Salao\\Salao.Repository\\Salao.Repository.csproj": {
-              "projectPath": "C:\\Estudos\\Salao\\Salao.Repository\\Salao.Repository.csproj"
+            "C:\\Projeto\\Salao\\Salao.Repository\\Salao.Repository.csproj": {
+              "projectPath": "C:\\Projeto\\Salao\\Salao.Repository\\Salao.Repository.csproj"
             },
-            "C:\\Estudos\\Salao\\Salao.ServiceApplication\\Salao.ServiceApplication.csproj": {
-              "projectPath": "C:\\Estudos\\Salao\\Salao.ServiceApplication\\Salao.ServiceApplication.csproj"
+            "C:\\Projeto\\Salao\\Salao.ServiceApplication\\Salao.ServiceApplication.csproj": {
+              "projectPath": "C:\\Projeto\\Salao\\Salao.ServiceApplication\\Salao.ServiceApplication.csproj"
             }
           }
         }
@@ -11568,7 +11574,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

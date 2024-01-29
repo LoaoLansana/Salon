@@ -10,3 +10,16 @@ C:\Estudos\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.dll
 C:\Estudos\Salao\Salao.Proxy\obj\Debug\net7.0\refint\Salao.Proxy.dll
 C:\Estudos\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.pdb
 C:\Estudos\Salao\Salao.Proxy\obj\Debug\net7.0\ref\Salao.Proxy.dll
+C:\Projeto\Salao\Salao.Proxy\bin\Debug\net7.0\Salao.Proxy.deps.json
+C:\Projeto\Salao\Salao.Proxy\bin\Debug\net7.0\Salao.Proxy.dll
+C:\Projeto\Salao\Salao.Proxy\bin\Debug\net7.0\Salao.Proxy.pdb
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.csproj.AssemblyReference.cache
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.AssemblyInfoInputs.cache
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.AssemblyInfo.cs
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.csproj.CoreCompileInputs.cache
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.sourcelink.json
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.dll
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\refint\Salao.Proxy.dll
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\Salao.Proxy.pdb
+C:\Projeto\Salao\Salao.Proxy\obj\Debug\net7.0\ref\Salao.Proxy.dll
